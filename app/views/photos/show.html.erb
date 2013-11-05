@@ -1,4 +1,6 @@
+<%= link_to "Back to Gallery", photos_path %>
+
 <p>
   <%= @photo[:title] %>, <%= @photo[:artist] %>
 </p>
-<img src="<%= @photo[:url] %>">
+<%= image_tag @photo.url %>
