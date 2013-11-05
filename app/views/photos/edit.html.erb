@@ -1,0 +1,20 @@
+<h1>Edit yr image!</h1>
+<%= link_to "Back to Gallery", photos_path %>
+
+<%= form_for @photo do |f| %>
+  <p>
+    <%= f.label "title" %><br>
+    <%= f.text_field "title" %>
+  </p>
+  <p>
+    <%= f.label "author" %><br>
+    <%= f.text_field "author" %>
+  </p>
+  <p>
+    <%= f.label "url" %><br>
+    <%= f.text_field "url" %>
+  </p>
+  <p>
+    <%= f.submit "Save" %>
+  </p>
+<% end %>
